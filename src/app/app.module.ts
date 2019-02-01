@@ -7,13 +7,15 @@ import { MainComponent } from './main/main.component';
 import { FormsModule } from "@angular/forms";
 import { FormComponent } from './form/form.component';
 import {RouterModule} from "@angular/router";
-import { ROUTING } from './app.routing'
+import { ROUTING } from './app.routing';
+import { UserComponent } from './user/user.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    FormComponent
+    FormComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
