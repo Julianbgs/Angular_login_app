@@ -7,8 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+    "e2e": "ng e2e",
+    "build:sass": "node-sass sass_folder/ -o css_folder",
+    "watch:sass": "npm run build:sass && node-sass sass_folder/ -wo css_folder/"  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~7.2.0",
@@ -20,7 +21,9 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
+    "node-sass": "^4.11.0",
     "rxjs": "~6.3.3",
+    "sass-loader": "^7.1.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
